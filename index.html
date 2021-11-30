@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/style.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+    </style>
+
+    <title>FORMULÁRIO</title>
+
+</head>
+<body>
+    <div>
+       <h1 id="titulo">Cadastro do Turísta </h1>
+       <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <legend>Dados Pessoais</legend>
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" nome= "nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="data">Data de Nascimento:</label>
+                <input type= "date" nome=data id="Data" required>
+            </div>
+
+            <div class="campo">
+                <label for="tel">País:</label>
+                <input type= "text" nome=pais id="pais" required>
+            </div>
+
+            <div class="campo">
+                <label for="tel">Telefone:</label>
+                <input type= "tel" nome=tel id="tel" required>
+            </div>
+           
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" nome="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label><strong>Maior de 18 anos?</strong></label>
+                <label>
+                    <input type="radio" name="idade" value="sim" checked> Sim
+                </label>
+                <label>
+                    <input type="radio" name="idade" value="nao"> Não
+                </label>
+                
+            </div>
+
+        </fieldset>
+        <br>
+        <div class="campo">
+            <label>Motivo da Viagem:</label>
+            <select id="Motivo">
+                <option selected disabled value="">Selecione</option>
+                <option>Negócios</option>
+                <option>Estudo</option>
+                <option>Turísmo</option>
+                <option>Outros</option>
+            </select>
+        </div>
+        <br>
+        <fieldset class="grupo">
+            <legend>Áreas de interesse</legend>
+            <div class="campo">
+               
+                <input type="checkbox" id="opção1" nome= opção1 value="Artes Plásticas">
+                <label for="opção1">Arte Plásticas</label>
+
+                <input type="checkbox" id="opção2" nome= opção2 value="Música">
+                <label for="opção2">Música</label>
+
+                <input type="checkbox" id="opção3" nome= opção3 value= "Literatura">
+                <label for="opção3">Literatura</label>
+
+                <input type="checkbox" id="opção4" nome= opção4 value="Negócios">
+                <label for="opção4">Negócios</label>
+
+                <input type="checkbox" id="opção5" nome= opção5 value="cultura">
+                <label for="opção5">Cultura</label>
+
+                <input type="checkbox" id="opção6" nome= opção6 value="gastronomia">
+                <label for="opção5">Gastronomia</label>
+            </div>
+        </fieldset>
+        <br>
+        <div class="campo">
+            <label for="comentarios">Comentário:</label>
+            <textarea rows="6" style="width: 26em" id="comentarios" name="comentarios"></textarea>
+        </div>
+        <button class="botão" type="submit">Enviar</button>
+        <button class="botão" type="reset">Apagar</button>
+    
+    </form>
+
+</body>
+</html>
